@@ -1,0 +1,66 @@
+<div class="wrap-face-zalo">
+  <?php if($config['cart']=="true"){?>
+    <div class="support-cart">
+      <a class="btn-support-cart" href="gio-hang">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 435.104 435.104" style="enable-background:new 0 0 435.104 435.104;" xml:space="preserve" width="30px" height="30px">
+          <g>
+            <circle cx="154.112" cy="377.684" r="52.736" data-original="#000000" class="active-path" data-old_color="#Ffffff" fill="#FFFFFF"/>
+            <path d="M323.072,324.436L323.072,324.436c-29.267-2.88-55.327,18.51-58.207,47.777c-2.88,29.267,18.51,55.327,47.777,58.207     c3.468,0.341,6.962,0.341,10.43,0c29.267-2.88,50.657-28.94,47.777-58.207C368.361,346.928,348.356,326.924,323.072,324.436z" data-original="#000000" class="active-path" data-old_color="#F8F8F8" fill="#FFFFFF"/>
+            <path d="M431.616,123.732c-2.62-3.923-7.059-6.239-11.776-6.144h-58.368v-1.024C361.476,54.637,311.278,4.432,249.351,4.428     C187.425,4.424,137.22,54.622,137.216,116.549c0,0.005,0,0.01,0,0.015v1.024h-43.52L78.848,50.004     C77.199,43.129,71.07,38.268,64,38.228H0v30.72h51.712l47.616,218.624c1.257,7.188,7.552,12.397,14.848,12.288h267.776     c7.07-0.041,13.198-4.901,14.848-11.776l37.888-151.552C435.799,132.019,434.654,127.248,431.616,123.732z M249.344,197.972     c-44.96,0-81.408-36.448-81.408-81.408s36.448-81.408,81.408-81.408s81.408,36.448,81.408,81.408     C330.473,161.408,294.188,197.692,249.344,197.972z" data-original="#000000" class="active-path" data-old_color="#F8F8F8" fill="#FFFFFF"/>
+            <path d="M237.056,118.1l-28.16-28.672l-22.016,21.504l38.912,39.424c2.836,2.894,6.7,4.55,10.752,4.608     c3.999,0.196,7.897-1.289,10.752-4.096l64.512-60.928l-20.992-22.528L237.056,118.1z" data-original="#000000" class="active-path" data-old_color="#F8F8F8" fill="#FFFFFF"/>
+          </g>
+        </svg>
+        <div class="animated infinite zoomIn kenit-alo-circle"></div>
+        <div class="animated infinite pulse kenit-alo-circle-fill"></div>
+        <span class="cnt crl-bg count_item_pr" id="soluongmua"><?=get_total()?></span>
+      </a>
+    </div>
+  <?php } ?>
+
+  <a class="btn-zalo" href="https://zalo.me/<?=preg_replace('/[^0-9]/','',$row_setting['zalo'])?>" target="_blank">
+    <div class="animated infinite zoomIn kenit-alo-circle"></div>
+    <div class="animated infinite pulse kenit-alo-circle-fill"></div>
+    <i><img src="images/zalo.png" class="w100" alt="Zalo"></i>
+  </a>
+
+  <a class="btn-zalo hotline-call" href="tel:<?=preg_replace('/[^0-9]/','',$row_setting['dienthoai'])?>" target="_blank">
+    <div class="animated infinite zoomIn kenit-alo-circle"></div>
+    <div class="animated infinite pulse kenit-alo-circle-fill"></div>
+    <i class="fa fa-phone"></i>
+  </a>
+  <div class="js-facebook-messenger-box onApp rotate bottom-right cfm rubberBand animated" data-anim="rubberBand">
+    <svg id="fb-msng-icon" data-name="messenger icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.47 30.66"><path d="M29.56,14.34c-8.41,0-15.23,6.35-15.23,14.19A13.83,13.83,0,0,0,20,39.59V45l5.19-2.86a16.27,16.27,0,0,0,4.37.59c8.41,0,15.23-6.35,15.23-14.19S38,14.34,29.56,14.34Zm1.51,19.11-3.88-4.16-7.57,4.16,8.33-8.89,4,4.16,7.48-4.16Z" transform="translate(-14.32 -14.34)" style="fill:#fff"></path></svg>
+    <svg id="close-icon" data-name="close icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.98 39.99"><path d="M48.88,11.14a3.87,3.87,0,0,0-5.44,0L30,24.58,16.58,11.14a3.84,3.84,0,1,0-5.44,5.44L24.58,30,11.14,43.45a3.87,3.87,0,0,0,0,5.44,3.84,3.84,0,0,0,5.44,0L30,35.45,43.45,48.88a3.84,3.84,0,0,0,5.44,0,3.87,3.87,0,0,0,0-5.44L35.45,30,48.88,16.58A3.87,3.87,0,0,0,48.88,11.14Z" transform="translate(-10.02 -10.02)" style="fill:#fff"></path></svg>
+  </div>
+  <div class="js-facebook-messenger-container">
+      <div class="js-facebook-messenger-top-header"><span>Hotline tư vấn: <?=$row_setting['dienthoai']?> </span></div>
+      <div class="fb-page" data-tabs="messages" data-href="<?=$row_setting['facebook']?>" data-width="320" data-height="350" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
+  </div>
+</div>
+<script>
+jQuery(document).ready(function(){jQuery(".js-facebook-messenger-box").on("click",function(){jQuery(".js-facebook-messenger-box, .js-facebook-messenger-container").toggleClass("open"),jQuery(".js-facebook-messenger-tooltip").length&&jQuery(".js-facebook-messenger-tooltip").toggle()}),jQuery(".js-facebook-messenger-box").hasClass("cfm")&&setTimeout(function(){jQuery(".js-facebook-messenger-box").addClass("rubberBand animated")},3500),jQuery(".js-facebook-messenger-tooltip").length&&(jQuery(".js-facebook-messenger-tooltip").hasClass("fixed")?jQuery(".js-facebook-messenger-tooltip").show():jQuery(".js-facebook-messenger-box").on("hover",function(){jQuery(".js-facebook-messenger-tooltip").show()}),jQuery(".js-facebook-messenger-close-tooltip").on("click",function(){jQuery(".js-facebook-messenger-tooltip").addClass("closed")}))});
+</script>
+<style type="text/css">
+.support-cart {}
+.support-cart a.btn-support-cart {position: relative; text-align: left; width: 40px; height: 40px; cursor: pointer; display: block }
+.support-cart a.btn-support-cart i {width: 40px; height: 40px; background: #FF2D37; color: #fff; border-radius: 100%; font-size: 20px; text-align: center; line-height: 1.9; position: relative; z-index: 999 }
+.support-cart a.btn-support-cart svg {position: absolute; top: 50%; transform: translate(0, -50%); z-index: 1; left: 0; right: 0; margin: 0 auto }
+.support-cart a.btn-support-cart .kenit-alo-circle {border-color: #FF2D37 }
+.support-cart a.btn-support-cart .kenit-alo-circle-fill {background-color: rgba(255, 45, 55, 0.7) }
+.support-cart .count_item_pr {position: absolute; top: -15px; right: -15px; height: 25px; min-width: 25px; border-radius: 50%; color: #fff; background-color: #FF2D37; text-align: center; line-height: 21px; z-index: 9999; border: 2px solid #fff; font-size: 13px }
+.support-cart:before {border: 15px solid transparent; border-bottom: 15px solid #FF2D37; margin-left: -15px; bottom: 75px; left: 30px; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; display: none }
+.support-cart:after {content: ""; position: absolute; left: 0; bottom: 70px; width: 100%; height: 30px; background: 0 0; display: none; z-index: 8 }
+.kenit-alo-circle-fill {width: 60px; height: 60px; top: -10px; position: absolute; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; border: 2px solid transparent; -webkit-transition: all .1s; -moz-transition: all .1s; -o-transition: all .1s; transition: all .1s; background-color: rgba(21, 85, 147, 0.5); opacity: .75; right: -10px }
+.kenit-alo-circle {width: 50px; height: 50px; top: -5px; right: -5px; position: absolute; background-color: transparent; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; border: 2px solid rgba(30, 30, 30, 0.4); opacity: .1; border-color: #1862a9; opacity: .5 }
+.js-facebook-messenger-container{height:0;overflow: hidden;}
+.js-facebook-messenger-container.open {height: auto;}
+.js-facebook-messenger-container.closed,.js-facebook-messenger-tooltip.closed{display:none!important}.js-facebook-messenger-tooltip{bottom:97px;right:97px}.js-facebook-messenger-tooltip{color:#404040;background:#fff}.js-facebook-messenger-box,.js-facebook-messenger-button,.js-facebook-messenger-tooltip{z-index:999}.js-facebook-messenger-tooltip{display:none;position:fixed;text-align:center;border-radius:10px;overflow:hidden;font-size:12px;line-height:1;padding:10px;border:1px solid rgba(0,0,0,0.1);box-shadow:rgba(0,0,0,0.15) 0 2pt 10pt;z-index:1.0E+30}.js-facebook-messenger-close-tooltip{width:10px;height:10px;display:inline-block;cursor:pointer;margin-left:10px}.js-facebook-messenger-box.rubberBand{-webkit-animation-name:rubberBand;animation-name:rubberBand}.js-facebook-messenger-box.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.js-facebook-messenger-box{}.js-facebook-messenger-box{background:#1182fc}.js-facebook-messenger-box,.js-facebook-messenger-button,.js-facebook-messenger-tooltip{z-index:999}.js-facebook-messenger-box{width:55px;height:55px;display:block;position:relative;cursor:pointer;text-align:center;line-height:55px;background:#1182FC;border-radius:100%;overflow:hidden;-webkit-box-shadow:1px 1px 4px 0 rgba(0,0,0,0.3);-moz-box-shadow:1px 1px 4px 0 rgba(0,0,0,0.3);box-shadow:1px 1px 4px 0 rgba(0,0,0,0.3)}.js-facebook-messenger-box.rotate svg#fb-msng-icon{transform:rotate(0deg)}.js-facebook-messenger-box svg#fb-msng-icon{width:30px;height:30px;position:absolute;top:13px;left:13px;opacity:1;overflow:hidden;-webkit-transition:opacity 160ms ease-in-out,transform 160ms ease-in-out;-moz-transition:opacity 160ms ease-in-out,transform 160ms ease-in-out;-o-transition:opacity 160ms ease-in-out,transform 160ms ease-in-out;transition:opacity 160ms ease-in-out,transform 160ms ease-in-out}.js-facebook-messenger-box.rotate svg#close-icon{transform:rotate(-45deg)}.js-facebook-messenger-box svg#close-icon{opacity:0;width:20px;height:20px;position:absolute;top:18px;left:18px;-webkit-transition:opacity 160ms ease-in-out,transform 160ms ease-in-out;-moz-transition:opacity 160ms ease-in-out,transform 160ms ease-in-out;-o-transition:opacity 160ms ease-in-out,transform 160ms ease-in-out;transition:opacity 160ms ease-in-out,transform 160ms ease-in-out}.js-facebook-messenger-container{transform:translateY(50px);bottom:110px;right:35px}.js-facebook-messenger-container,.js-facebook-messenger-container-button{z-index:-1}.js-facebook-messenger-container{position:fixed;opacity:0;border-radius:10px;pointer-events:none;box-shadow:0 1px 6px rgba(0,0,0,0.06),0 2px 32px rgba(0,0,0,0.16);-webkit-transition:transform 160ms ease-in-out,opacity 160ms ease-in-out;-moz-transition:transform 160ms ease-in-out,opacity 160ms ease-in-out;-o-transition:transform 160ms ease-in-out,opacity 160ms ease-in-out;transition:transform 160ms ease-in-out,opacity 160ms ease-in-out;z-index: -1}.js-facebook-messenger-top-header{width:300px}.js-facebook-messenger-top-header{color:#fff;background:#1182fc}.js-facebook-messenger-top-header{display:block;position:relative;width:300px;background:#1182FC;color:#fff;text-align:center;line-height:1;padding:10px;font-size:14px;border-top-left-radius:10px;border-top-right-radius:10px}.js-facebook-messenger-container iframe,.js-facebook-messenger-container-button iframe{border-bottom-left-radius:10px;border-bottom-right-radius:10px}.js-facebook-messenger-box,.js-facebook-messenger-button,.js-facebook-messenger-tooltip{z-index:999}.js-facebook-messenger-container,.js-facebook-messenger-container-button{z-index:-1}.js-facebook-messenger-top-header{color:#fff;background:#1182fc}.js-facebook-messenger-box{background:#1182fc}.js-facebook-messenger-top-header{width:300px}.js-facebook-messenger-tooltip{color:#404040;background:#fff}.js-facebook-messenger-box{}.js-facebook-messenger-container{transform:translateY(50px);bottom:135px;right:68px}.js-facebook-messenger-container.open{transform:translateY(0px);opacity:1;pointer-events:all;z-index: 1000}.js-facebook-messenger-tooltip{bottom:97px;right:97px}.js-facebook-messenger-box.open svg#fb-msng-icon{opacity:0}.js-facebook-messenger-box.rotate.open svg#close-icon{transform:rotate(0deg)}.js-facebook-messenger-box.open svg#close-icon{opacity:1}
+  .btn-zalo { display: block; width: 40px; height: 40px;position: relative;margin-top: 25px}
+  .btn-zalo i {top:0;right:0; display: flex; display: -ms-flex; align-items: center; -ms-flex-align: center; width: 40px; height: 40px; border-radius: 50%; background: #1182FC; position: relative; z-index: 9999; }
+  .btn-zalo i img { vertical-align: middle;width:40px }
+  .kenit-alo-circle-fill {width: 60px; height: 60px; top: -10px; position: absolute; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; border: 2px solid transparent; -webkit-transition: all .5s; -moz-transition: all .5s; -o-transition: all .5s; transition: all .5s; background-color: rgba(17, 130, 252, 0.45); opacity: .75; right: -10px; }
+  .kenit-alo-circle {width: 50px; height: 50px; top: -5px; right: -5px; position: absolute; background-color: transparent; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; border: 2px solid rgba(17, 130, 252, .8); opacity: .1; border-color: #1182FC; opacity: .5; }
+  .btn-zalo.hotline-call{margin-bottom: 20px}
+  .btn-zalo.hotline-call i:before{color: #fff;font-size: 20px;position: relative;left: 12px;}
+  .wrap-face-zalo{position: fixed;right: 10px;bottom:120px;display: flex;align-items: center;justify-content: center;flex-direction: column;z-index: 999}
+</style>

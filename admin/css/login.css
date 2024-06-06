@@ -1,0 +1,209 @@
+/*body, html {
+    background: #6EBA58 repeat center center fixed;
+}*/
+#Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow:hidden;
+}
+#Wrapper #Header.not_login {
+    margin-top: 0px;
+}
+html{ height: 100%; }
+body { width: 100%; height:100vh; background:url(../images/bg_admin.png); background-size:cover; }
+div#particle-canvas { width: 100%; height: 100%; }
+#Wrapper #Header {
+    background-color: #6EBA58;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+#Wrapper #Header .logo {
+    width: auto;
+    display: inline-block;
+    color: #fff;
+    margin: 30px auto;
+}
+#Wrapper #Header .logo span {
+    background: #5d5d5d;
+    width: 60px;
+    height: 55px;
+    display: inline-block;
+    line-height: 52px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#Wrapper #Header .logo h2 {
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+#Wrapper #Header .logo h2 em {
+    color: #5d5d5d;
+    font-style: normal;
+    text-transform: uppercase;
+}
+#Wrapper .main-container.pages-body {
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+#Wrapper .welcome-login {
+    background: #fff;
+    border-radius: 10px;
+    z-index: 9999999;
+    width: 100%;
+    padding-top: 20px
+    top: 0px;left: 0px;bottom: 0px;right: 0px;margin:150px auto;
+    width:400px;
+}
+#Wrapper .welcome-login h2 {
+    padding-top: 20px;
+    background: rgba(255, 0, 0, 0.);
+    overflow: hidden;
+    line-height: 45px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+    margin:0px 0 10px;
+    /* opacity: 0.5; */
+}
+.col-md-offset-3{margin: auto;}
+#Wrapper .welcome-login .form{padding: 10px 30px 15px 30px;}
+#Wrapper .control-label {
+    background: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 0px;
+    text-transform: capitalize;
+    color: #666;
+    display: none;
+}
+.has-feedback {
+    position: relative;
+}
+.form-control.input-padding {
+    padding-left: 55px !important;
+}
+.input-lg {
+    height: 55px;
+    padding: 8px 12px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 0px;
+}
+.form-control {
+    padding-right: 10px;
+    font-size: 14px;
+    color: #555;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    box-shadow: none!important;
+    border:none!important;
+    border-bottom: 1px solid #d9d9d9!important;
+    border-radius: 5px!important;
+}
+.form-control.input-padding {
+    padding-left:30px !important;
+}
+.has-feedback .form-control {
+    padding-right: 42.5px;
+}
+
+#Wrapper .form-control-feedback {
+    left: 0px;
+    right: auto;
+    color: #aaa;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+}
+.form-group-lg .form-control+.form-control-feedback, .input-group-lg+.form-control-feedback, .input-lg+.form-control-feedback {
+    width: 20px;
+    height: 55px;
+    line-height: 55px;
+}
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+.form-control:focus {
+  outline: none;
+  border-color:#333!important;
+}
+.form-control:focus ~ span {
+  color: #5d5d5d !important;
+  font-size: 18px;
+}
+select.form-control.input-sm {padding: 0px 6px; font-size: 14px; }
+.label, .panel, .btn, .form-control, .modal-content {border-radius: 0px 0px 0px 0px !important; }
+h1, h2, h3, h4, li, ol, ul {margin: 0; padding: 0; list-style: none inside; border: none; border: 0; }
+label {margin: 0; font-weight: 400; }
+.form-group {margin-bottom: 10px!important; }
+.logMeIn{border-color: #333!important;background:#333!important;color: #fff;font-size: 18px;
+    outline: none!important;width: 100%;border-radius:5px!important;text-transform: uppercase;}
+.logMeIn:hover{background:#1d1d1d!important;border-color: #1d1d1d!important;}
+.logMeIn:focus{outline: none!important;box-shadow: none!important;}
+.inputContainer {position: relative; float: left; }
+.formError {position: absolute; top: 300px; left: 282px; display: block; z-index: 9999999999999; cursor: pointer; }
+.formError .formErrorContent {display: none!important;background: #202020; position: relative; z-index: 5001; color: #fff; width: 180px; font-size: 11px; border: 1px solid #000; padding: 2px 10px; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; }
+.greenPopup .formErrorContent {background: #33be40; }
+.blackPopup .formErrorContent {background: #393939; color: #FFF; }
+.formError .formErrorArrow {display: none!important;width: 15px; margin: -2px 0 0 13px; position: relative; z-index: 5006; }
+.formError .formErrorArrowBottom {box-shadow: none; margin: 0px 0 0 12px; top: 2px; }
+.formError .formErrorArrow div {font-size: 0px; height: 1px; background: #202020; margin: 0 auto; line-height: 0; font-size: 0; display: block; }
+.formError .formErrorArrowBottom div {box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+.greenPopup .formErrorArrow div {background: #33be40; }
+.blackPopup .formErrorArrow div {background: #393939; color: #FFF; }
+.formError .formErrorArrow .line10 {width: 15px; border: none; }
+.formError .formErrorArrow .line9 {width: 13px; border: none; }
+.formError .formErrorArrow .line8 {width: 11px; }
+.formError .formErrorArrow .line7 {width: 9px; }
+.formError .formErrorArrow .line6 {width: 7px; }
+.formError .formErrorArrow .line5 {width: 5px; }
+.formError .formErrorArrow .line4 {width: 3px; }
+.formError .formErrorArrow .line3 {width: 1px; border-left: 2px solid #ddd; border-right: 2px solid #ddd; border-bottom: 0 solid #ddd; }
+.formError .formErrorArrow .line2 {width: 3px; border: none; background: #ddd; }
+.formError .formErrorArrow .line1 {width: 1px; border: none; }
+/*==*/
+.alert-danger, .alert-danger .alert-link {color: #ab0505; border-color: #f9abab; display: none; }
+.alert-danger {background: #fccdcd; }
+.alert {border-radius: 0; }
+/*==*/
+.loading_window {width: 70px; height: 50px; display: block; position: fixed; top: 50%; left: 50%; margin: -50px 0px 0px -35px; }
+.spinner {width: 70px; text-align: center; }
+.spinner .bounce1 {-webkit-animation-delay: -0.32s; animation-delay: -0.32s; }
+.spinner .bounce2 {-webkit-animation-delay: -0.16s; animation-delay: -0.16s; }
+.spinner > div {width: 18px; height: 18px; background-color: #333; border-radius: 100%; display: inline-block; -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both; animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
+@-webkit-keyframes sk-bouncedelay {0%, 80%, 100% { -webkit-transform: scale(0) } 40% { -webkit-transform: scale(1.0) } }
+@keyframes sk-bouncedelay {0%, 80%, 100% {-webkit-transform: scale(0); transform: scale(0); } 40% {-webkit-transform: scale(1.0); transform: scale(1.0); } }
+/*===*/
+.logo > span > span{display: flex!important;align-items: center;justify-content: center;}
+.logo > span > span > i{transition: 0.5s; -webkit-transition: 0.5s; -ms-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-animation: mymove 1.3s infinite linear; animation: mymove 1.3s infinite linear; }
+@-webkit-keyframes mymove{0%{-webkit-transform:rotate(0deg); transform:rotate(0deg) } 100%{-webkit-transform:rotate(360deg); transform:rotate(360deg) } }
+@keyframes mymove{0%{-webkit-transform:rotate(0deg); transform:rotate(0deg) } 100%{-webkit-transform:rotate(360deg); transform:rotate(360deg) } }
